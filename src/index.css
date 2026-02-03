@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #aecccb, #764ba2);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* Todo Card */
+/* ========================= */
+.todo-card {
+  width: 600px;
+  max-width: 95%;
+  background-color: #ffffffcb;
+  border-radius: 12px;
+}
+
+/* Title */
+.todo-card h3 {
+  font-weight: 600;
+}
+
+/* List Item */
+.list-group-item {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+/* ========================= */
+/* Mobile Devices */
+/* ========================= */
+@media (max-width: 576px) {
+
+  .todo-card {
+    padding: 1rem;
+  }
+
+  /* Bootstrap-safe input group fix */
+  .input-group {
+    flex-wrap: wrap;
+  }
+
+  .input-group .form-control {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .input-group .btn {
+    width: 100% !important;
+    flex: 0 0 100%;
+  }
+
+  .list-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .list-group-item div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+@media (max-width: 768px) {
+  .todo-card {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .todo-card {
+    width: 650px;
+  }
+}
