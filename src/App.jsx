@@ -1,8 +1,9 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './components/Menubar';
-import Todo from './components/todo';
+
 import { ToastContainer } from 'react-toastify'
+import Todo from './components/Todo'
 function App() {
 
   return (
@@ -18,7 +19,7 @@ function App() {
         theme="light"
       />
       <Menubar />
-      <Todo />
+      <Todo/>
     </>
   )
 }
